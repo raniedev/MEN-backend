@@ -1,0 +1,55 @@
+raniedev
+Fl1ZBh8SMo7SJ3yo
+
+company: {
+            type: [String],
+            required: [true, "Please, enter the console."],
+            enum: {
+                value: ['Atari', 'Microsoft', 'Nintendo', 'Sega', 'SNK', 'Sony']
+            }
+        },
+        console: {
+            type: String,
+            required: [true, "Please, enter the console."],
+            enum: {
+                value: ['Arcade', 'Dreamcast', 'Game Boy', 'Game Boy Advanced', 'Game Boy Color', 'Game Gear', 'Master System', 'Mega Drive', 'Nintendo 64', 'NES Famicon', 'Nintendo 3DS', 'Nintendo DS', 'Nintendo Switch', 'Nintendo Wii', 'Nintendo Wii U', 'PlayStation 1', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5', 'PlayStation Portable', 'PlayStation Vita', 'Saturn', 'SNES Famicon', 'Xbox', 'Xbox 360', 'Xbox One', 'Xbox Series']
+            }
+        },
+        genre: {
+            type: [String],
+            required: [true, "Please, enter the genre."],
+            enum: {
+                values: ['Action', 'Adventure', 'Battle Royale', 'Beat \'em Up', 'Board Game', 'Card Game', 'Casino', 'CCG', 'CMS', 'Educational', 'Extreme Sports', 'Fighting', 'Football', 'Gachapon', 'Hack \'n\' Slash', 'Metroidvania', 'MMORPG', 'MOBA', 'Platform', 'Puzzle', 'Racing', 'Rhythm', 'RTS', 'Roguelike', 'RPG', 'Run \'n\' Gun', 'Shooter', 'Simulation', 'Sports', 'Strategy', 'Survival', 'Tatical', 'TCG', 'War']
+            }
+        },
+
+
+        ,
+        description: {
+            type: String,
+            required: false
+        },
+        year: {
+            type: Date,
+            required: false
+        },
+        icon: {
+            data: Buffer,
+            contentType: String,
+            required: false
+        },
+        title: {
+            data: Buffer,
+            contentType: String,
+            required: false
+        },
+        inGame:  {
+            data: Buffer,
+            contentType: String,
+            required: false
+        },
+        boxArt:  {
+            data: Buffer,
+            contentType: String,
+            required: false
+        },
